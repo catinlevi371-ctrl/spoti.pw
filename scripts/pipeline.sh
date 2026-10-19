@@ -12,7 +12,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 THEOS="${THEOS:-$HOME/theos}"
 FLEX_DEB="$ROOT/vendor/com.hopeless.autoflex_0.0.1_iphoneos-arm.deb"
-EEVEE_DEB="$ROOT/vendor/eeveespotify.deb" # Update filename if your EeveeSpotify deb is named differently
+EEVEE_DEB="$ROOT/vendor/com.eevee.spotify_6.6.3_arm64.deb" # Update filename if your EeveeSpotify deb is named differently
 
 # The bundle id is left alone by default, the way EeveeSpotify and the YouTube mods leave it. Rewriting
 # it only works when it ends up equal to the App ID of the profile that signs the IPA, and this build
